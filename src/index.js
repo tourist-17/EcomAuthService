@@ -6,7 +6,6 @@ const app = express();
 // const db = require("./models/index");
 // const {User,Role} = require("./models/index");
 
-
 // const UserService = require('./services/user-service');
 
 const prepareAndStartServer = () => {
@@ -15,7 +14,7 @@ const prepareAndStartServer = () => {
   app.use("/api", apiRoutes);
   app.listen(PORT, async () => {
     console.log(`Server Start on PORT ${PORT}`);
-    
+
     // const u1 = await User.findByPk(3);
     // const r1 = await Role.findByPk(2);
     // u1.addRole(r1);

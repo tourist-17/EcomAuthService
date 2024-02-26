@@ -26,6 +26,7 @@ const create = async (req, res) => {
 
 const signIn = async (req, res) => {
   try {
+    console.log(req.body);
     const response = await useService.signIn(req.body.email, req.body.password);
     return res.status(200).json({
       message: "Successfully signIn a user",
